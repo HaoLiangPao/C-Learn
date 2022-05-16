@@ -9,7 +9,20 @@ using namespace std;
 
 
 // Functions
+void sayHi(string name, int age) {
+    cout << "Hello " << name << ", a " << age << " year old boy" << endl;
+}
 
+
+int power(int baseNum, int powNum) {
+    int result = 1;
+    for (size_t i = 0; i < powNum; i++)
+    {
+        result *= baseNum;
+    }
+
+    return result;
+}
 
 int main()
 {
@@ -64,7 +77,54 @@ int main()
 
 
     // Functions
+    sayHi("Hao", age);
 
+
+    // If statement
+    bool isMale = true;
+    if (isMale)
+    {
+        cout << "Your are a male" << endl;
+    } else {
+        cout << "Your are not a male" << endl;
+    }
+
+
+    // Switch statement
+    string result = "age ";
+    switch (age)
+    {
+    case 0:
+        result += to_string(age);
+        break;
+    case 1:
+        result += to_string(age);
+        break;
+    default:
+        break;
+    }
+
+
+    // While Loop
+    int index = 0;
+    while (index <= 5)
+    {
+        cout << index << endl;
+        index++;
+    }
+
+    // For loop
+    int count = 10;
+    for (size_t i = 0; i < count; i++)
+    {
+        cout << i << endl;
+    }
+
+    cout << power(2, 10) << endl;
+
+
+
+    
 
     return 0;
 }
