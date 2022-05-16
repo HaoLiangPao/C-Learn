@@ -122,9 +122,37 @@ int main()
 
     cout << power(2, 10) << endl;
 
-
-
+    // 2D array
+    int numberGrid[3][2] = {
+        {1, 2},
+        {3, 4},
+        {5, 6}};
     
+    for (size_t i = 0; i < 3; i++)
+    {
+        for (size_t j = 0; j < 2; j++)
+        {
+            cout << numberGrid[i][j];
+        }
+        cout << endl;
+    }
+
+    cout << numberGrid << endl;
+    cout << numberGrid[0] << endl;
+    cout << numberGrid[0][0] << endl;
+
+
+    // Pointers
+    int *pAge = &age;
+    float *pGpa = &gpa;
+    cout << &age << endl;
+    cout << &gpa << endl;
+    cout << pAge << endl;
+    cout << pGpa << endl;
+    cout << *pGpa << endl;
+    cout << *pGpa << endl;
+
+
 
     return 0;
 }
