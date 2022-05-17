@@ -1,5 +1,11 @@
 #include <iostream>
+
+// Option 1: Include the entire std objects
 using namespace std;
+// Option 2: Only include the necessary objects requried in this program
+using std::cout;
+using std::endl;
+using std::string;
 
 namespace namespace1
 {
